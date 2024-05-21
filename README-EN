@@ -1,0 +1,16 @@
+The program's objective is to simulate the passage of N days based on a matrix input, taking into account each element and its neighbors. The user can input a matrix with values of 0, 1, or 2 representing EMPTY, HUMAN, and ZOMBIE respectively.
+
+Each position [i][j] of the matrix considers its 8 neighbors located at fixed positions.
+
+The interactions are described as follows:
+- If a human (X) has at least one neighboring zombie, it becomes infected and turns into a zombie the next day.
+- If a zombie (X) has two or more human neighbors, it is hunted and killed by humans.
+- If a zombie (X) has no human neighbors, it starves to death and becomes empty the next day.
+- If an empty (X) has exactly two human neighbors, a human is born in that position the next day.
+
+The input consists of:
+- The number of lines and columns, M and N separated by a space.
+- An integer I representing the number of days to simulate.
+- M*N lines for the user to enter each position of the matrix.
+
+The output contains the state of the array after all I days have passed.
